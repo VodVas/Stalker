@@ -65,6 +65,6 @@ public class BotMovement : MonoBehaviour
 
     private void Move(Vector3 movement)
     {
-        _rigidBody.MovePosition(transform.position + movement);
+        _rigidBody.Move(transform.position + movement, Quaternion.identity);
     }
 }
